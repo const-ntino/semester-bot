@@ -1,6 +1,6 @@
-require("dotenv").config();
 const moment = require("moment");
 const Twit = require("twit");
+const cron = require("node-cron");
 
 require("dotenv").config();
 
@@ -51,4 +51,7 @@ exports.handler = async () => {
   }
 };
 
-exports.handler();
+cron.schedule("30 08 * * *", function () {
+  console.log('Running Cron Job');
+  exports.handler();
+});
