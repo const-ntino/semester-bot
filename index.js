@@ -5,7 +5,7 @@ const Twit = require("twit");
 require("dotenv").config();
 
 const twit = new Twit({
-  timeout_ms: 60 * 1000,
+  timeout_ms: 10 * 60 * 1000,
   consumer_key: process.env.consumer_key,
   consumer_secret: process.env.consumer_key_secret,
   access_token: process.env.access_token,

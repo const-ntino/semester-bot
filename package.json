@@ -7,5 +7,8 @@
     "dotenv": "^8.2.0",
     "moment": "^2.29.1",
     "twit": "^2.2.11"
+  },
+  "scripts": {
+    "start": "node index.js"
   }
 }
